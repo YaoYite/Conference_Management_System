@@ -1,0 +1,46 @@
+﻿@model IEnumerable<CMS.Models.assign>
+
+@{
+    ViewBag.Title = "AllAssign";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Assign Results</h2>
+
+<table class="display" id="data">
+    <thead>
+        <tr>
+            <th>
+                Paper Title
+            </th>
+            <th>
+                Reviewer
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.paper.title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AspNetUsers.UserName)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @if (this.User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Back to List", "IndexAdmin")
+    }
+    @if (this.User.IsInRole("Chair"))
+    {
+        @Html.ActionLink("Back to List", "IndexChair")
+    }
+</div>

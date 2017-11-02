@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CMS</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="~/Content/cmslogo.png" width="25" height="25"  class="d-inline-block align-top" alt="CMS Badge">
+        </a>
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("CMS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Conference", "Index", "Confs")</li>
+                    @if (this.User.IsInRole("Admin"))
+                    {
+                        <li>@Html.ActionLink("Paper", "IndexAdmin", "papers")</li>
+                    }
+                    else
+                    {
+                        if (this.User.IsInRole("Chair"))
+                        {
+                            <li>@Html.ActionLink("Related Paper", "IndexChair", "papers")</li>
+                        }
+                        else
+                        {
+                            if (this.User.IsInRole("Author"))
+                            {
+                                <li>@Html.ActionLink("Author's Paper", "Index", "papers")</li>
+                            }
+                            else
+                            {
+                                if (this.User.IsInRole("Reviewer"))
+                                {
+                                <li>@Html.ActionLink("Assigned Paper", "IndexRev", "papers")</li>
+                                }
+                                else
+                                { }
+                            }
+                        }
+                    }
+                    <li>@Html.ActionLink("User's Keyword", "Index", "userKeys")</li>
+                    @if (this.User.IsInRole("Author"))
+                    {
+                    <li>@Html.ActionLink("Paper's keyword", "Index", "paperKeys")</li>
+                    }
+                    @if (this.User.IsInRole("Admin"))
+                    {
+                    <li>@Html.ActionLink("All user's keyword", "AllInfo", "userKeys")</li>
+                    }
+                    @if (this.User.IsInRole("Chair"))
+                    {
+                        <li>@Html.ActionLink("All user's keyword", "AllInfo", "userKeys")</li>
+                    }
+                    <li>@Html.ActionLink("Documentation", "About", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - FIT5136</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/jquery-ui-1.12.1.js")
+    @Scripts.Render("~/Scripts/jquery-ui-1.12.1.min.js")
+    @Scripts.Render("~/Scripts/DataTables/jquery.dataTables.min.js")
+    @Scripts.Render("~/Scripts/table.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

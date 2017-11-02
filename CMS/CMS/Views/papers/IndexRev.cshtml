@@ -1,0 +1,69 @@
+﻿@model IEnumerable<CMS.Models.paper>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Paper</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+
+<table class="display" id="data">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Body
+            </th>
+            <th>
+                Is Assigned
+            </th>
+            <th>
+                Is Accepted
+            </th>
+            <th>
+                Author Name
+            </th>
+            <th>
+                Conference
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.body)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.assigned)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.accepted)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AspNetUsers.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Conf.name)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Review", "Review", new { id = item.Id }) |
+                    @Html.ActionLink("Review Result", "SeeResult", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

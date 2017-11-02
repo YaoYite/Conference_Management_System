@@ -1,0 +1,63 @@
+﻿@model IEnumerable<CMS.Models.Conf>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Conference</h2>
+@if (this.User.IsInRole("Chair"))
+{
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>}
+<table class="display" id="data">
+    <thead>
+        <tr>
+            <th>
+                Conference Name
+            </th>
+            <th>
+                Keyword
+            </th>
+            <th>
+                Submission Deadline
+            </th>
+            <th>
+                Review Deadline
+            </th>
+            <th>
+                Chair Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.topic)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sub_deadline)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rev_deadline)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AspNetUsers.UserName)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+                    @Html.ActionLink("Detail", "Details", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

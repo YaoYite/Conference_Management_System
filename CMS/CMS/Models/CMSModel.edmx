@@ -1,0 +1,850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AspNetRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="AspNetUserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="RoleId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="aaa" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar(max)" />
+          <Property Name="SecurityStamp" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="nvarchar(max)" />
+          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="datetime" />
+          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="assign">
+          <Key>
+            <PropertyRef Name="paper_id" />
+            <PropertyRef Name="reviewer_id" />
+          </Key>
+          <Property Name="paper_id" Type="int" Nullable="false" />
+          <Property Name="reviewer_id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="aaa" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Conf">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="topic" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="chair_id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="sub_deadline" Type="datetime" />
+          <Property Name="rev_deadline" Type="datetime" />
+        </EntityType>
+        <EntityType Name="keyword">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="key_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="paper">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="body" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="assigned" Type="bit" Nullable="false" />
+          <Property Name="accepted" Type="bit" Nullable="false" />
+          <Property Name="user_id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="conf_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="paperkey">
+          <Key>
+            <PropertyRef Name="paper_id" />
+            <PropertyRef Name="key_id" />
+          </Key>
+          <Property Name="paper_id" Type="int" Nullable="false" />
+          <Property Name="key_id" Type="int" Nullable="false" />
+          <Property Name="aaa" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="review">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="rating" Type="int" Nullable="false" />
+          <Property Name="comment" Type="nvarchar" MaxLength="256" Nullable="false" />
+          <Property Name="user_id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="paper_id" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="userkey">
+          <Key>
+            <PropertyRef Name="user_id" />
+            <PropertyRef Name="key_id" />
+          </Key>
+          <Property Name="user_id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="key_id" Type="int" Nullable="false" />
+          <Property Name="aaa" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <Association Name="FK_assign_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="assign" Type="Self.assign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="assign">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_assign_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="assign" Type="Self.assign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="assign">
+              <PropertyRef Name="reviewer_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conf_User">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Conf" Type="Self.Conf" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Conf">
+              <PropertyRef Name="chair_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+          <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetRoles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_paperkey_key">
+          <End Role="keyword" Type="Self.keyword" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="paperkey" Type="Self.paperkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="keyword">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paperkey">
+              <PropertyRef Name="key_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_paperkey_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="paperkey" Type="Self.paperkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paperkey">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_userkey_keyword">
+          <End Role="keyword" Type="Self.keyword" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="userkey" Type="Self.userkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="keyword">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="userkey">
+              <PropertyRef Name="key_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_userkey_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="userkey" Type="Self.userkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="userkey">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="paper_conf">
+          <End Role="Conf" Type="Self.Conf" Multiplicity="1" />
+          <End Role="paper" Type="Self.paper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conf">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paper">
+              <PropertyRef Name="conf_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="paper_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="paper" Type="Self.paper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paper">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="review_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1" />
+          <End Role="review" Type="Self.review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="review">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="review_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="review" Type="Self.review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="review">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ModelStoreContainer">
+          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="assign" EntityType="Self.assign" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Conf" EntityType="Self.Conf" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="keyword" EntityType="Self.keyword" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="paper" EntityType="Self.paper" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="paperkey" EntityType="Self.paperkey" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="review" EntityType="Self.review" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="userkey" EntityType="Self.userkey" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_assign_paper" Association="Self.FK_assign_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="assign" EntitySet="assign" />
+          </AssociationSet>
+          <AssociationSet Name="FK_assign_user" Association="Self.FK_assign_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="assign" EntitySet="assign" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conf_User" Association="Self.FK_Conf_User">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Conf" EntitySet="Conf" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_paperkey_key" Association="Self.FK_paperkey_key">
+            <End Role="keyword" EntitySet="keyword" />
+            <End Role="paperkey" EntitySet="paperkey" />
+          </AssociationSet>
+          <AssociationSet Name="FK_paperkey_paper" Association="Self.FK_paperkey_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="paperkey" EntitySet="paperkey" />
+          </AssociationSet>
+          <AssociationSet Name="FK_userkey_keyword" Association="Self.FK_userkey_keyword">
+            <End Role="keyword" EntitySet="keyword" />
+            <End Role="userkey" EntitySet="userkey" />
+          </AssociationSet>
+          <AssociationSet Name="FK_userkey_user" Association="Self.FK_userkey_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="userkey" EntitySet="userkey" />
+          </AssociationSet>
+          <AssociationSet Name="paper_conf" Association="Self.paper_conf">
+            <End Role="Conf" EntitySet="Conf" />
+            <End Role="paper" EntitySet="paper" />
+          </AssociationSet>
+          <AssociationSet Name="paper_user" Association="Self.paper_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="paper" EntitySet="paper" />
+          </AssociationSet>
+          <AssociationSet Name="review_paper" Association="Self.review_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="review" EntitySet="review" />
+          </AssociationSet>
+          <AssociationSet Name="review_user" Association="Self.review_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="review" EntitySet="review" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AspNetRoles">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AspNetUserRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetRoles" ToRole="AspNetUserRoles" />
+        </EntityType>
+        <EntityType Name="AspNetUserRoles">
+          <Key>
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RoleId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="aaa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="AspNetRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" FromRole="AspNetUserRoles" ToRole="AspNetRoles" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" FromRole="AspNetUserRoles" ToRole="AspNetUsers" />
+        </EntityType>
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="AspNetUserRoles" Relationship="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserRoles" />
+          <NavigationProperty Name="assign" Relationship="Self.FK_assign_user" FromRole="AspNetUsers" ToRole="assign" />
+          <NavigationProperty Name="Conf" Relationship="Self.FK_Conf_User" FromRole="AspNetUsers" ToRole="Conf" />
+          <NavigationProperty Name="userkey" Relationship="Self.FK_userkey_user" FromRole="AspNetUsers" ToRole="userkey" />
+          <NavigationProperty Name="paper" Relationship="Self.paper_user" FromRole="AspNetUsers" ToRole="paper" />
+          <NavigationProperty Name="review" Relationship="Self.review_user" FromRole="AspNetUsers" ToRole="review" />
+        </EntityType>
+        <EntityType Name="assign">
+          <Key>
+            <PropertyRef Name="paper_id" />
+            <PropertyRef Name="reviewer_id" />
+          </Key>
+          <Property Name="paper_id" Type="Int32" Nullable="false" />
+          <Property Name="reviewer_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="aaa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_assign_user" FromRole="assign" ToRole="AspNetUsers" />
+          <NavigationProperty Name="paper" Relationship="Self.FK_assign_paper" FromRole="assign" ToRole="paper" />
+        </EntityType>
+        <EntityType Name="Conf">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="topic" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="chair_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="sub_deadline" Type="DateTime" Precision="3" />
+          <Property Name="rev_deadline" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_Conf_User" FromRole="Conf" ToRole="AspNetUsers" />
+          <NavigationProperty Name="paper" Relationship="Self.paper_conf" FromRole="Conf" ToRole="paper" />
+        </EntityType>
+        <EntityType Name="keyword">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="key_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="paperkey" Relationship="Self.FK_paperkey_key" FromRole="keyword" ToRole="paperkey" />
+          <NavigationProperty Name="userkey" Relationship="Self.FK_userkey_keyword" FromRole="keyword" ToRole="userkey" />
+        </EntityType>
+        <EntityType Name="paper">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="body" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="assigned" Type="Boolean" Nullable="false" />
+          <Property Name="accepted" Type="Boolean" Nullable="false" />
+          <Property Name="user_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="conf_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.paper_user" FromRole="paper" ToRole="AspNetUsers" />
+          <NavigationProperty Name="assign" Relationship="Self.FK_assign_paper" FromRole="paper" ToRole="assign" />
+          <NavigationProperty Name="Conf" Relationship="Self.paper_conf" FromRole="paper" ToRole="Conf" />
+          <NavigationProperty Name="paperkey" Relationship="Self.FK_paperkey_paper" FromRole="paper" ToRole="paperkey" />
+          <NavigationProperty Name="review" Relationship="Self.review_paper" FromRole="paper" ToRole="review" />
+        </EntityType>
+        <EntityType Name="paperkey">
+          <Key>
+            <PropertyRef Name="paper_id" />
+            <PropertyRef Name="key_id" />
+          </Key>
+          <Property Name="paper_id" Type="Int32" Nullable="false" />
+          <Property Name="key_id" Type="Int32" Nullable="false" />
+          <Property Name="aaa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="keyword" Relationship="Self.FK_paperkey_key" FromRole="paperkey" ToRole="keyword" />
+          <NavigationProperty Name="paper" Relationship="Self.FK_paperkey_paper" FromRole="paperkey" ToRole="paper" />
+        </EntityType>
+        <EntityType Name="review">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="rating" Type="Int32" Nullable="false" />
+          <Property Name="comment" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="user_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="paper_id" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.review_user" FromRole="review" ToRole="AspNetUsers" />
+          <NavigationProperty Name="paper" Relationship="Self.review_paper" FromRole="review" ToRole="paper" />
+        </EntityType>
+        <EntityType Name="userkey">
+          <Key>
+            <PropertyRef Name="user_id" />
+            <PropertyRef Name="key_id" />
+          </Key>
+          <Property Name="user_id" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="key_id" Type="Int32" Nullable="false" />
+          <Property Name="aaa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_userkey_user" FromRole="userkey" ToRole="AspNetUsers" />
+          <NavigationProperty Name="keyword" Relationship="Self.FK_userkey_keyword" FromRole="userkey" ToRole="keyword" />
+        </EntityType>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+          <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetRoles">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="AspNetUserRoles" Type="Self.AspNetUserRoles" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="AspNetUserRoles">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_assign_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="assign" Type="Self.assign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="assign">
+              <PropertyRef Name="reviewer_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Conf_User">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Conf" Type="Self.Conf" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Conf">
+              <PropertyRef Name="chair_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_userkey_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="userkey" Type="Self.userkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="userkey">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="paper_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="paper" Type="Self.paper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paper">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="review_user">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="review" Type="Self.review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="review">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_assign_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="assign" Type="Self.assign" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="assign">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="paper_conf">
+          <End Role="Conf" Type="Self.Conf" Multiplicity="1" />
+          <End Role="paper" Type="Self.paper" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conf">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paper">
+              <PropertyRef Name="conf_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_paperkey_key">
+          <End Role="keyword" Type="Self.keyword" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="paperkey" Type="Self.paperkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="keyword">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paperkey">
+              <PropertyRef Name="key_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_userkey_keyword">
+          <End Role="keyword" Type="Self.keyword" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="userkey" Type="Self.userkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="keyword">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="userkey">
+              <PropertyRef Name="key_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_paperkey_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="paperkey" Type="Self.paperkey" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="paperkey">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="review_paper">
+          <End Role="paper" Type="Self.paper" Multiplicity="1" />
+          <End Role="review" Type="Self.review" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="paper">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="review">
+              <PropertyRef Name="paper_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+          <EntitySet Name="AspNetUserRoles" EntityType="Self.AspNetUserRoles" />
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+          <EntitySet Name="assign" EntityType="Self.assign" />
+          <EntitySet Name="Conf" EntityType="Self.Conf" />
+          <EntitySet Name="keyword" EntityType="Self.keyword" />
+          <EntitySet Name="paper" EntityType="Self.paper" />
+          <EntitySet Name="paperkey" EntityType="Self.paperkey" />
+          <EntitySet Name="review" EntityType="Self.review" />
+          <EntitySet Name="userkey" EntityType="Self.userkey" />
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId">
+            <End Role="AspNetRoles" EntitySet="AspNetRoles" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="AspNetUserRoles" EntitySet="AspNetUserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_assign_user" Association="Self.FK_assign_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="assign" EntitySet="assign" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Conf_User" Association="Self.FK_Conf_User">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Conf" EntitySet="Conf" />
+          </AssociationSet>
+          <AssociationSet Name="FK_userkey_user" Association="Self.FK_userkey_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="userkey" EntitySet="userkey" />
+          </AssociationSet>
+          <AssociationSet Name="paper_user" Association="Self.paper_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="paper" EntitySet="paper" />
+          </AssociationSet>
+          <AssociationSet Name="review_user" Association="Self.review_user">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="review" EntitySet="review" />
+          </AssociationSet>
+          <AssociationSet Name="FK_assign_paper" Association="Self.FK_assign_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="assign" EntitySet="assign" />
+          </AssociationSet>
+          <AssociationSet Name="paper_conf" Association="Self.paper_conf">
+            <End Role="Conf" EntitySet="Conf" />
+            <End Role="paper" EntitySet="paper" />
+          </AssociationSet>
+          <AssociationSet Name="FK_paperkey_key" Association="Self.FK_paperkey_key">
+            <End Role="keyword" EntitySet="keyword" />
+            <End Role="paperkey" EntitySet="paperkey" />
+          </AssociationSet>
+          <AssociationSet Name="FK_userkey_keyword" Association="Self.FK_userkey_keyword">
+            <End Role="keyword" EntitySet="keyword" />
+            <End Role="userkey" EntitySet="userkey" />
+          </AssociationSet>
+          <AssociationSet Name="FK_paperkey_paper" Association="Self.FK_paperkey_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="paperkey" EntitySet="paperkey" />
+          </AssociationSet>
+          <AssociationSet Name="review_paper" Association="Self.review_paper">
+            <End Role="paper" EntitySet="paper" />
+            <End Role="review" EntitySet="review" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="AspNetRoles">
+            <EntityTypeMapping TypeName="Model.AspNetRoles">
+              <MappingFragment StoreEntitySet="AspNetRoles">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUserRoles">
+            <EntityTypeMapping TypeName="Model.AspNetUserRoles">
+              <MappingFragment StoreEntitySet="AspNetUserRoles">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="aaa" ColumnName="aaa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUsers">
+            <EntityTypeMapping TypeName="Model.AspNetUsers">
+              <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="assign">
+            <EntityTypeMapping TypeName="Model.assign">
+              <MappingFragment StoreEntitySet="assign">
+                <ScalarProperty Name="paper_id" ColumnName="paper_id" />
+                <ScalarProperty Name="reviewer_id" ColumnName="reviewer_id" />
+                <ScalarProperty Name="aaa" ColumnName="aaa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Conf">
+            <EntityTypeMapping TypeName="Model.Conf">
+              <MappingFragment StoreEntitySet="Conf">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="topic" ColumnName="topic" />
+                <ScalarProperty Name="chair_id" ColumnName="chair_id" />
+                <ScalarProperty Name="sub_deadline" ColumnName="sub_deadline" />
+                <ScalarProperty Name="rev_deadline" ColumnName="rev_deadline" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="keyword">
+            <EntityTypeMapping TypeName="Model.keyword">
+              <MappingFragment StoreEntitySet="keyword">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="key_name" ColumnName="key_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="paper">
+            <EntityTypeMapping TypeName="Model.paper">
+              <MappingFragment StoreEntitySet="paper">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="body" ColumnName="body" />
+                <ScalarProperty Name="assigned" ColumnName="assigned" />
+                <ScalarProperty Name="accepted" ColumnName="accepted" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="conf_id" ColumnName="conf_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="paperkey">
+            <EntityTypeMapping TypeName="Model.paperkey">
+              <MappingFragment StoreEntitySet="paperkey">
+                <ScalarProperty Name="paper_id" ColumnName="paper_id" />
+                <ScalarProperty Name="key_id" ColumnName="key_id" />
+                <ScalarProperty Name="aaa" ColumnName="aaa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="review">
+            <EntityTypeMapping TypeName="Model.review">
+              <MappingFragment StoreEntitySet="review">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="paper_id" ColumnName="paper_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userkey">
+            <EntityTypeMapping TypeName="Model.userkey">
+              <MappingFragment StoreEntitySet="userkey">
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="key_id" ColumnName="key_id" />
+                <ScalarProperty Name="aaa" ColumnName="aaa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

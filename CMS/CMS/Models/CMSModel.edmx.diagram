@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8452c4bb49ef4b7cac62c727c1adfe04" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserRoles" Width="2.25" PointX="2.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.assign" Width="1.5" PointX="3" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Conf" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.keyword" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.paper" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.paperkey" Width="1.5" PointX="7.5" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.review" Width="1.5" PointX="8.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.userkey" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserRoles_dbo_AspNetRoles_RoleId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserRoles_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_assign_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Conf_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_userkey_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.paper_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.review_user" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_assign_paper" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.paper_conf" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_paperkey_key" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_userkey_keyword" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_paperkey_paper" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.review_paper" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,574 @@
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\ApplicationInsights.config
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\csc.exe
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\vbc.exe
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\CMS.dll.config
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\CMS.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\CMS.pdb
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Antlr3.Runtime.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\EntityFramework.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\EntityFramework.SqlServer.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.Web.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Newtonsoft.Json.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Owin.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Helpers.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Mvc.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Optimization.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Razor.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\WebGrease.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.Web.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Helpers.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Mvc.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Optimization.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.Razor.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Antlr3.Runtime.pdb
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Newtonsoft.Json.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\EntityFramework.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\EntityFramework.SqlServer.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Myself\Documents\5136\CMS\CMS\obj\Debug\CMS.dll
+C:\Users\Myself\Documents\5136\CMS\CMS\obj\Debug\CMS.pdb
+C:\Users\Myself\Documents\5136\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\ApplicationInsights.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\csc.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\vbc.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\CMS.dll.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\CMS.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\CMS.pdb
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Antlr3.Runtime.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\EntityFramework.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.Web.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Newtonsoft.Json.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Helpers.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Mvc.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Optimization.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Razor.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\WebGrease.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.Web.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Helpers.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Mvc.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Optimization.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.Razor.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Antlr3.Runtime.pdb
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Newtonsoft.Json.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\EntityFramework.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\obj\Debug\CMS.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS\CMS\obj\Debug\CMS.pdb
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\ApplicationInsights.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\csc.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\System.Collections.Immutable.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\System.Reflection.Metadata.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\vbc.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\VBCSCompiler.exe
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\roslyn\VBCSCompiler.exe.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\CMS.dll.config
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\CMS.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\CMS.pdb
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Antlr3.Runtime.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\EntityFramework.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\EntityFramework.SqlServer.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.DependencyCollector.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.Web.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.WindowsServer.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.ApplicationInsights.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Google.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Web.Infrastructure.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Newtonsoft.Json.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Owin.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Helpers.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Mvc.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Optimization.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Razor.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.Deployment.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.Razor.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\WebGrease.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.DependencyCollector.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.Web.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AI.WindowsServer.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.ApplicationInsights.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Helpers.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Mvc.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Optimization.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.Razor.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.Deployment.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\System.Web.WebPages.Razor.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Antlr3.Runtime.pdb
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Newtonsoft.Json.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\EntityFramework.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\EntityFramework.SqlServer.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Google.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\obj\Debug\CMS.dll
+\\ad.monash.edu\home\User092\yjia0020\Desktop\CMS w createConf\CMS\obj\Debug\CMS.pdb
+C:\Users\Myself\Desktop\CMS\CMS\bin\ApplicationInsights.config
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\csc.exe
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\vbc.exe
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\Myself\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Myself\Desktop\CMS\CMS\bin\CMS.dll.config
+C:\Users\Myself\Desktop\CMS\CMS\bin\CMS.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\CMS.pdb
+C:\Users\Myself\Desktop\CMS\CMS\bin\Antlr3.Runtime.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\EntityFramework.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.Web.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Newtonsoft.Json.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Owin.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Helpers.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Mvc.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Optimization.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Razor.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\WebGrease.dll
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.Web.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Helpers.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Mvc.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Optimization.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.Razor.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Antlr3.Runtime.pdb
+C:\Users\Myself\Desktop\CMS\CMS\bin\Newtonsoft.Json.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\EntityFramework.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Myself\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Myself\Desktop\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+C:\Users\Myself\Desktop\CMS\CMS\obj\Debug\CMS.dll
+C:\Users\Myself\Desktop\CMS\CMS\obj\Debug\CMS.pdb
+D:\5136\CMS\CMS\bin\ApplicationInsights.config
+D:\5136\CMS\CMS\bin\roslyn\csc.exe
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\5136\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\5136\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+D:\5136\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+D:\5136\CMS\CMS\bin\roslyn\vbc.exe
+D:\5136\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+D:\5136\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+D:\5136\CMS\CMS\bin\CMS.dll.config
+D:\5136\CMS\CMS\bin\CMS.dll
+D:\5136\CMS\CMS\bin\CMS.pdb
+D:\5136\CMS\CMS\bin\Antlr3.Runtime.dll
+D:\5136\CMS\CMS\bin\EntityFramework.dll
+D:\5136\CMS\CMS\bin\EntityFramework.SqlServer.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.Web.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+D:\5136\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\5136\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+D:\5136\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+D:\5136\CMS\CMS\bin\Newtonsoft.Json.dll
+D:\5136\CMS\CMS\bin\Owin.dll
+D:\5136\CMS\CMS\bin\System.Web.Helpers.dll
+D:\5136\CMS\CMS\bin\System.Web.Mvc.dll
+D:\5136\CMS\CMS\bin\System.Web.Optimization.dll
+D:\5136\CMS\CMS\bin\System.Web.Razor.dll
+D:\5136\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+D:\5136\CMS\CMS\bin\System.Web.WebPages.dll
+D:\5136\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+D:\5136\CMS\CMS\bin\WebGrease.dll
+D:\5136\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+D:\5136\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\5136\CMS\CMS\bin\Microsoft.AI.Web.xml
+D:\5136\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+D:\5136\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+D:\5136\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\5136\CMS\CMS\bin\System.Web.Helpers.xml
+D:\5136\CMS\CMS\bin\System.Web.Mvc.xml
+D:\5136\CMS\CMS\bin\System.Web.Optimization.xml
+D:\5136\CMS\CMS\bin\System.Web.Razor.xml
+D:\5136\CMS\CMS\bin\System.Web.WebPages.xml
+D:\5136\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+D:\5136\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+D:\5136\CMS\CMS\bin\Antlr3.Runtime.pdb
+D:\5136\CMS\CMS\bin\Newtonsoft.Json.xml
+D:\5136\CMS\CMS\bin\EntityFramework.xml
+D:\5136\CMS\CMS\bin\EntityFramework.SqlServer.xml
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\5136\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+D:\5136\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\5136\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+D:\5136\CMS\CMS\obj\Debug\CMS.dll
+D:\5136\CMS\CMS\obj\Debug\CMS.pdb
+E:\CMS\CMS\bin\ApplicationInsights.config
+E:\CMS\CMS\bin\roslyn\csc.exe
+E:\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+E:\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+E:\CMS\CMS\bin\roslyn\vbc.exe
+E:\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+E:\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+E:\CMS\CMS\bin\CMS.dll.config
+E:\CMS\CMS\bin\CMS.dll
+E:\CMS\CMS\bin\CMS.pdb
+E:\CMS\CMS\bin\Antlr3.Runtime.dll
+E:\CMS\CMS\bin\EntityFramework.dll
+E:\CMS\CMS\bin\EntityFramework.SqlServer.dll
+E:\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+E:\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+E:\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\CMS\CMS\bin\Microsoft.AI.Web.dll
+E:\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+E:\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CMS\CMS\bin\Microsoft.Owin.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+E:\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+E:\CMS\CMS\bin\Newtonsoft.Json.dll
+E:\CMS\CMS\bin\Owin.dll
+E:\CMS\CMS\bin\System.Web.Helpers.dll
+E:\CMS\CMS\bin\System.Web.Mvc.dll
+E:\CMS\CMS\bin\System.Web.Optimization.dll
+E:\CMS\CMS\bin\System.Web.Razor.dll
+E:\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+E:\CMS\CMS\bin\System.Web.WebPages.dll
+E:\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+E:\CMS\CMS\bin\WebGrease.dll
+E:\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+E:\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\CMS\CMS\bin\Microsoft.AI.Web.xml
+E:\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+E:\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+E:\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CMS\CMS\bin\System.Web.Helpers.xml
+E:\CMS\CMS\bin\System.Web.Mvc.xml
+E:\CMS\CMS\bin\System.Web.Optimization.xml
+E:\CMS\CMS\bin\System.Web.Razor.xml
+E:\CMS\CMS\bin\System.Web.WebPages.xml
+E:\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+E:\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+E:\CMS\CMS\bin\Antlr3.Runtime.pdb
+E:\CMS\CMS\bin\Newtonsoft.Json.xml
+E:\CMS\CMS\bin\EntityFramework.xml
+E:\CMS\CMS\bin\EntityFramework.SqlServer.xml
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\CMS\CMS\bin\Microsoft.Owin.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+E:\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
+E:\CMS\CMS\obj\Debug\CMS.dll
+E:\CMS\CMS\obj\Debug\CMS.pdb
+C:\Users\super\Desktop\CMS\CMS\bin\ApplicationInsights.config
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\csc.exe
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\vbc.exe
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe
+C:\Users\super\Desktop\CMS\CMS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\super\Desktop\CMS\CMS\bin\CMS.dll.config
+C:\Users\super\Desktop\CMS\CMS\bin\CMS.dll
+C:\Users\super\Desktop\CMS\CMS\bin\CMS.pdb
+C:\Users\super\Desktop\CMS\CMS\bin\Antlr3.Runtime.dll
+C:\Users\super\Desktop\CMS\CMS\bin\EntityFramework.dll
+C:\Users\super\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.Web.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Newtonsoft.Json.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Owin.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Helpers.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Mvc.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Optimization.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Razor.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.dll
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.dll
+C:\Users\super\Desktop\CMS\CMS\bin\WebGrease.dll
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.Web.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.ApplicationInsights.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Helpers.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Mvc.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Optimization.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.Razor.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.Deployment.xml
+C:\Users\super\Desktop\CMS\CMS\bin\System.Web.WebPages.Razor.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Antlr3.Runtime.pdb
+C:\Users\super\Desktop\CMS\CMS\bin\Newtonsoft.Json.xml
+C:\Users\super\Desktop\CMS\CMS\bin\EntityFramework.xml
+C:\Users\super\Desktop\CMS\CMS\bin\EntityFramework.SqlServer.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\super\Desktop\CMS\CMS\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\super\Desktop\CMS\CMS\obj\Debug\CMS.dll
+C:\Users\super\Desktop\CMS\CMS\obj\Debug\CMS.pdb
+C:\Users\super\Desktop\CMS\CMS\obj\Debug\CMS.csprojResolveAssemblyReference.cache
